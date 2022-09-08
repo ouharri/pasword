@@ -28,7 +28,7 @@ psw Pasword (char p[])
 		if (  	isdigit( p[i]  )    )Is.nbr=1;
 		if (  	islower( p[i]  )    )Is.min=1;
 		if (  	isupper( p[i]  )    )Is.maj=1;
-		if (    isprint( p[i]  )    )Is.car=1;
+		if (  !isalpha(p[i]) && !isdigit(p[i]) && !islower(p[i]) &&  !isupper(p[i])  )Is.car=1;
 		
 	}
 	
